@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "oobttest": {
+    "host": "oobttest-r1d4.lexington.ibm.com",
+    "port": "50001",
+    "database": "OOBTR200",
+    "password": "oobt5adm",
+    "name": "oobttest",
+    "user": "oobttest",
+    "schema": "OOBT",
+    "connector": "db2"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "CHECKLIST_RECORD",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "db2": {
+      "table": "CHECKLIST_RECORD"
+    }
+  },
+  "properties": {
+    "CHECKLIST_RECORD_ID": {
+      "type": "number",
+      "id": true
+    },
+    "CHECKLIST_REQUEST_ID": {
+      "type": "string"
+    },
+    "SUBCONTRACTOR_FIRST_NAME": {
+      "type": "string"
+    },
+    "RECORD_STATUS": {
+      "type": "string"
+    },
+    "SUBCONTRACTOR_MIDDLE_NAME": {
+      "type": "string"
+    },
+    "SUBCONTRACTOR_MIDDLE_NAME": {
+      "type": "string"
+    },
+    "SUBCONTRACTOR_LAST_NAME": {
+      "type": "string"
+    },
+    "PURCHASE_ORDER_NUM": {
+      "type": "number"
+    },
+    "CREATE_TS": {
+      "type": "date"
+    },
+    "COMMENT": {
+      "type": "string"
+    }
+
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
+
+

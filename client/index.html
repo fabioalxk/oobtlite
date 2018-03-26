@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Items </title>
+	
+	<script src="./lib/jquery/dist/jquery.js"></script>
+	<script src="./lib/angular/angular.js"></script>
+	<script src="./lib/angular-resource/angular-resource.js"></script>
+	<script src="./lib/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="./js/lb-services.js"></script>
+	<link rel="stylesheet" type="text/css" href="./lib/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+	<div ng-app="myItems" ng-controller="myItemsController">
+
+		<ul ng-repeat="i in Items">
+			<p>
+				items
+			</p>
+			<p>
+				{{i.name}}
+			</p>
+					
+		</ul>
+
+		<div ng-value="CHECKLIST_RECORDs">
+			
+		</div>
+
+
+		<ul ng-repeat="j in CHECKLIST_RECORDs">
+			<p>
+				Records
+			</p>
+			<p>
+				{{j.CHECKLIST_RECORD_ID}}
+			</p>
+			<p>
+				{{j.SUBCONTRACTOR_FIRST_NAME}}
+			</p>
+		</ul>
+
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>
