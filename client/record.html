@@ -32,7 +32,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+<!--         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -50,25 +50,14 @@
               
             </ul>
 
-        </nav>
+        </nav> -->
 
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4" ng-controller="myItemsController">
+        <main role="main" class="col-md-12 ml-sm-auto col-lg-12 pt-3 px-4" ng-controller="myItemsController">
           <div class="row">
             <div class="col-md-8">
               <h2>Search Results</h2>
             </div>
-            <!-- <div class="col-md-4">
-                <div class="btn-toolbar mb-2 mb-md-0 share-button-div">
-                  <div class="btn-group mr-2">
-                    <button class="btn btn-sm btn-outline-secondary">Share</button>
-                    <button class="btn btn-sm btn-outline-secondary">Export</button>
-                  </div>
-                  <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                    This week
-                  </button>
-                </div>
-            </div> -->
+
           </div>
           
 
@@ -88,7 +77,11 @@
                 <tr ng-repeat="j in CHECKLIST_RECORDs">
                   <td><a href="http://oobttest-r1a4.lexington.ibm.com:9081/services/tools/oobt/onboardRecord.do?recordId={{j.CHECKLIST_RECORD_ID}}">{{j.CHECKLIST_RECORD_ID}}</a></td>
                   <td>{{j.CHECKLIST_REQUEST_ID}}</td>
-                  <td>{{j.RECORD_STATUS}}</td>
+                  <td>
+                      <div>
+                          {{ recordStatusMap[j.RECORD_STATUS ]}}
+                      </div>
+                  </td>
                   <td>{{j.SUBCONTRACTOR_FIRST_NAME}} {{j.SUBCONTRACTOR_MIDDLE_NAME}} {{j.SUBCONTRACTOR_LAST_NAME}}</td>
                   <td>{{j.PURCHASE_ORDER_NUM}}</td>
                   <td>{{j.CREATE_TS}}</td>
@@ -102,6 +95,7 @@
     </div>
 
     <script src="js/app.js"></script>
+    <script src="js/global.js"></script>
 
 </body>
 </html>

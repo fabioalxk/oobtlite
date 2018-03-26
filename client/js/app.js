@@ -38,17 +38,31 @@ myApp.controller("myItemsController", function($scope, $http, Item, CHECKLIST_RE
 	//url: 'http://localhost:9090/api/CHECKLIST_RECORDs?filter[limit]=100&filter[order]=CHECKLIST_RECORD_ID%20DESC' 
 	$http({
 	  method: 'GET',
-	  url: '/api/CHECKLIST_RECORDs?filter[limit]=100&filter[order]=CHECKLIST_RECORD_ID%20DESC'
+	  url: '/api/CHECKLIST_RECORDs?filter[limit]=300&filter[order]=CHECKLIST_RECORD_ID%20DESC'
 	}).then(function successCallback(response) {
-	    // this callback will be called asynchronously
-	    // when the response is available
-	    console.log("response");
-	    console.log(response);
+
 	    console.log(response.data.CHECKLIST_RECORD_ID);
 	    $scope.CHECKLIST_RECORDs = response.data;
+	    $scope.recordStatusMap = {
+	    	"ONBDD": "Onboarding",
+	    	"INIT ": "Initial",
+	    	"SBMT ": "Submitted",
+	    	"CANDD": "Cancelled",
+	    	"CHNGD": "Changed",
+	    	"OFBDD": "Offboarded",
+	    	"NA": "N/A",
+	    	"REI": "REINSTATED",
+	    	"CANCG": "CANCELLING",
+	    	"CHNGN": "CHANGING",
+	    	"FINAL": "FINAL",
+	    	"PROCESSING": "PROCESSING",
+	    	"CLOSE": "CLOSED",
+	    	"SBMTR": "SUBMITTED_RETURNED",
+	    	"RSBMT": "RESUBMITTED",
+	    	"DRFT": "DRAFT",
+	    	"RSBMT": "RESUBMITTED"
+	    }
 	  }, function errorCallback(response) {
-	    // called asynchronously if an error occurs
-	    // or server returns response with an error status.
 	    console.log("error");
 	    console.log(response);
 	  });
