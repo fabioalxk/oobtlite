@@ -16,3 +16,6 @@ td{
 	width:200px;
 	max-width:200px;
 }
+.table-responsive {
+	height: 1200px;
+}
