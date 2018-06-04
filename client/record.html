@@ -171,7 +171,14 @@
               </thead>
               <tbody>
                 <tr ng-repeat="j in CHECKLIST_RECORDs">
-                  <td><a href="http://oobttest-r1a4.lexington.ibm.com:9081/services/tools/oobt/onboardRecord.do?recordId={{j.CHECKLIST_RECORD_ID}}">{{j.CHECKLIST_RECORD_ID}}</a></td>
+
+                  <td ng-switch="j.RECORD_STATUS">
+                    <a ng-switch-when="ONBDD" href="http://oobttest-r1a4.lexington.ibm.com:9081/services/tools/oobt/onboardRecord.do?recordId={{j.CHECKLIST_RECORD_ID}}">{{j.CHECKLIST_RECORD_ID}}
+                    </a>
+                    <a ng-switch-when="CHNGD" href="/services/tools/oobt/changeRecord.do?recordId={{j.CHECKLIST_RECORD_ID}}">{{j.CHECKLIST_RECORD_ID}}
+                    </a>
+                    <p ng-switch-default href="">{{j.CHECKLIST_RECORD_ID}}</p>
+                  </td>
                   <td>{{j.CHECKLIST_REQUEST_ID}}</td>
                   <td>
                       <div>
