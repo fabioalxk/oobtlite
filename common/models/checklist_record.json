@@ -13,31 +13,297 @@
       "id": true
     },
     "CHECKLIST_REQUEST_ID": {
-      "type": "string"
-    },
-    "SUBCONTRACTOR_FIRST_NAME": {
-      "type": "string"
-    },
-    "RECORD_STATUS": {
-      "type": "string"
-    },
-    "SUBCONTRACTOR_MIDDLE_NAME": {
-      "type": "string"
-    },
-    "SUBCONTRACTOR_MIDDLE_NAME": {
-      "type": "string"
-    },
-    "SUBCONTRACTOR_LAST_NAME": {
-      "type": "string"
-    },
-    "PURCHASE_ORDER_NUM": {
       "type": "number"
     },
-    "CREATE_TS": {
+    "IRPA": {
+      "type": "number"
+    },
+    "PREV_IRPA_ID": {
+      "type": "number"
+    },
+    "RAR_ID": {
+      "type": "number"
+    },
+    "PREV_RAR_ID": {
+      "type": "number"
+    },
+    "PREV_CHECKLIST_RECORD_ID": {
+      "type": "number"
+    },
+
+
+    "PO_KEY" : {
+      "type": "number"
+    },
+    "IBM_RESOURCE_ID" : {
+      "type": "number"
+    },
+    "AUTOMATION" : {
+      "type": "number"
+    },
+    "CANCEL_REASON_ID" : {
+      "type": "number"
+    },
+
+
+    "RECORD_STATUS" : {
+      "type": "string"
+    },
+    "SUPPLIER_CONTACT_NAME" : {
+      "type": "string"
+    },
+    "SUPPLIER_CONTACT_EMAIL_ADDR" : {
+      "type": "string"
+    },
+    "RESOURCE_REQUEST_SYSTEM" : {
+      "type": "string"
+    },
+    "RESOURCE_REQUEST_NUM" : {
+      "type": "string"
+    },
+    "REQUESTING_SYSTEM" : {
+      "type": "string"
+    },
+    "REQUESTING_NUM" : {
+      "type": "string"
+    },
+    "HIRING_APPR_KNOWN" : {
+      "type": "string"
+    },
+    "HIRING_APPR_SYSTEM" : {
+      "type": "string"
+    },
+    "HIRING_APPR_TICKET_NUM" : {
+      "type": "string"
+    },
+    "PURCHASE_REQUISITION_KNOWN" : {
+      "type": "string"
+    },
+    "PURCHASE_REQUISITION_SYSTEM" : {
+      "type": "string"
+    },
+    "PURCHASE_REQUISITION_NUM" : {
+      "type": "string"
+    },
+    "LOA_EXIST" : {
+      "type": "string"
+    },
+    "LOA_BUYER_CONTACT" : {
+      "type": "string"
+    },
+    "PURCHASE_ORDER_NUM" : {
+      "type": "string"
+    },
+    "PURCHASE_ORDER_ITEM_NUM" : {
+      "type": "string"
+    },
+    "CREATE_UID" : {
+      "type": "string"
+    },
+    "UPDATE_UID" : {
+      "type": "string"
+    },
+    "RECORD_TYPE" : {
+      "type": "string"
+    },
+    "SUPPLIER_NAME" : {
+      "type": "string"
+    },
+    "DEPT_CD" : {
+      "type": "string"
+    },
+    "REGION_GROUP_CD" : {
+      "type": "string"
+    },
+    "CSA_CANDIDATE_KEY" : {
+      "type": "string"
+    },
+    "OFB_EARLY_TERM" : {
+      "type": "string"
+    },
+    "OFB_CONFIRM_CONTRACT_TERM_DT" : {
+      "type": "string"
+    },
+    "OFB_REASON" : {
+      "type": "string"
+    },
+    "REENGAGE_ELIGIBLE" : {
+      "type": "string"
+    },
+    "RAR_ID_C" : {
+      "type": "string"
+    },
+    "PREV_RAR_ID_C" : {
+      "type": "string"
+    },
+    "GENERATED_FROM_CHANGE_RECORD" : {
+      "type": "string"
+    },
+    "WAS_OFFBOARDED" : {
+      "type": "string"
+    },
+    "DIVISION_CD" : {
+      "type": "string"
+    },
+    "SUBK_LOC_CITY" : {
+      "type": "string"
+    },
+    "SUBK_LOC_ST" : {
+      "type": "string"
+    },
+    "SUBK_LOC_ST_FREEFORM" : {
+      "type": "string"
+    },
+    "SUBK_LOC_ZIP" : {
+      "type": "string"
+    },
+    "SUBK_LOC_COUNTRY" : {
+      "type": "string"
+    },
+    "SUBK_LOC_WORKPLACE_IND" : {
+      "type": "string"
+    },
+    "SUBK_LOC_WRK_LOC_CD" : {
+      "type": "string"
+    },
+    "SUBK_LOC_IBM_LOC" : {
+      "type": "string"
+    },
+    "SUBK_LOC_BUSINESS_UNIT" : {
+      "type": "string"
+    },
+    "GD_TYPE_CD" : {
+      "type": "string"
+    },
+    "OPEN_SEAT_TITLE" : {
+      "type": "string"
+    },
+    "PHONE" : {
+      "type": "string"
+    },
+    "CONTACT_EMAIL" : {
+      "type": "string"
+    },
+    "HAS_GLOBAL_DELIVERY_CENTER" : {
+      "type": "string"
+    },
+    "RENEWAL_FLAG" : {
+      "type": "string"
+    },
+    "TRANSFER_WITHIN_SAME_LOB" : {
+      "type": "string"
+    },
+    "CHANGE_CREATION_TRIGGER" : {
+      "type": "string"
+    },
+    "SERVICE_REQUEST_NUM" : {
+      "type": "string"
+    },
+    "PREV_REQUESTING_NUM" : {
+      "type": "string"
+    },
+    "PREV_HIRING_APPR_TICKET_NUM" : {
+      "type": "string"
+    },
+    "PREV_SERVICE_REQUEST_NUM" : {
+      "type": "string"
+    },
+    "PREV_PURCHASE_ORDER_NUM" : {
+      "type": "string"
+    },
+    "PREV_PURCHASE_REQUISITION_NUM" : {
+      "type": "string"
+    },
+
+
+    "SUBCONTRACTOR_FIRST_NAME" : {
+      "type": "string"
+    },
+    "SUBCONTRACTOR_MIDDLE_NAME" : {
+      "type": "string"
+    },
+    "SUBCONTRACTOR_LAST_NAME" : {
+      "type": "string"
+    },
+    "LOA_FILE_LOCATION" : {
+      "type": "string"
+    },
+    "COMMENT" : {
+      "type": "string"
+    },
+    "SUBK_LOC_ADDR1" : {
+      "type": "string"
+    },
+    "SUBK_LOC_ADDR2" : {
+      "type": "string"
+    },
+    "ROUTE_UID" : {
+      "type": "string"
+    },
+    "GLOBAL_DELIVERY_CENTER" : {
+      "type": "string"
+    },
+    "RETURNED_COMMENT" : {
+      "type": "string"
+    },
+    "EMAIL_ADDRESSES" : {
+      "type": "string"
+    },
+    "RESUBMITTEDBY_UID" : {
+      "type": "string"
+    },
+    "CANCEL_UID" : {
+      "type": "string"
+    },
+    "PROCESSING_CENTER" : {
+      "type": "string"
+    },
+
+
+
+    "EXPECTED_START_DT" : {
       "type": "date"
     },
-    "COMMENT": {
-      "type": "string"
+    "EXPECTED_END_DT" : {
+      "type": "date"
+    },
+    "LOA_START_DT" : {
+      "type": "date"
+    },
+    "LOA_ISSUE_DT" : {
+      "type": "date"
+    },
+    "ACTUAL_START_DT" : {
+      "type": "date"
+    },
+
+
+    "CREATE_TS" : {
+      "type": "date"
+    },
+    "UPDATE_TS" : {
+      "type": "date"
+    },
+    "COMPLETED_TS" : {
+      "type": "date"
+    },
+    "ROUTE_TS" : {
+      "type": "date"
+    },
+    "RENEWAL_START_TS" : {
+      "type": "date"
+    },
+    "RENEWAL_END_TS" : {
+      "type": "date"
+    },
+    "RENEWAL_ABORT_TS" : {
+      "type": "date"
+    },
+    "RESUBMITTEDBY_TS" : {
+      "type": "date"
+    },
+    "CANCEL_TS" : {
+      "type": "date"
     }
 
   },

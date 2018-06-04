@@ -71,6 +71,103 @@
                   <th>Contractor Name</th>
                   <th>Purchase Order Number</th>
                   <th>Creation Date</th>
+
+                  <!-- start -->
+                  <th>IRPA</th>
+                  <th>PREV_IRPA_ID</th>
+                  <th>RAR_ID</th>
+                  <th>PREV_RAR_ID</th>
+                  <th>PREV_CHECKLIST_RECORD_ID</th>
+                  <th>RECORD_STATUS</th>
+                  <th>SUPPLIER_CONTACT_NAME</th>
+                  <th>SUPPLIER_CONTACT_EMAIL_ADDR</th>
+                  <th>RESOURCE_REQUEST_SYSTEM</th>
+                  <th>RESOURCE_REQUEST_NUM</th>
+                  <th>REQUESTING_SYSTEM</th>
+                  <th>REQUESTING_NUM</th>
+                  <th>HIRING_APPR_KNOWN</th>
+                  <th>HIRING_APPR_SYSTEM</th>
+                  <th>HIRING_APPR_TICKET_NUM</th>
+                  <th>PURCHASE_REQUISITION_KNOWN</th>
+                  <th>PURCHASE_REQUISITION_SYSTEM</th>
+                  <th>PURCHASE_REQUISITION_NUM</th>
+                  <th>LOA_EXIST</th>
+                  <th>LOA_BUYER_CONTACT</th>
+                  <th>PURCHASE_ORDER_NUM</th>
+                  <th>PURCHASE_ORDER_ITEM_NUM</th>
+                  <th>CREATE_UID</th>
+                  <th>UPDATE_UID</th>
+                  <th>RECORD_TYPE</th>
+                  <th>SUPPLIER_NAME</th>
+                  <th>DEPT_CD</th>
+                  <th>REGION_GROUP_CD</th>
+                  <th>CSA_CANDIDATE_KEY</th>
+                  <th>OFB_EARLY_TERM</th>
+                  <th>OFB_CONFIRM_CONTRACT_TERM_DT</th>
+                  <th>OFB_REASON</th>
+                  <th>REENGAGE_ELIGIBLE</th>
+                  <th>RAR_ID_C</th>
+                  <th>PREV_RAR_ID_C</th>
+                  <th>GENERATED_FROM_CHANGE_RECORD</th>
+                  <th>WAS_OFFBOARDED</th>
+                  <th>DIVISION_CD</th>
+                  <th>SUBK_LOC_CITY</th>
+                  <th>SUBK_LOC_ST</th>
+                  <th>SUBK_LOC_ST_FREEFORM</th>
+                  <th>SUBK_LOC_ZIP</th>
+                  <th>SUBK_LOC_COUNTRY</th>
+                  <th>SUBK_LOC_WORKPLACE_IND</th>
+                  <th>SUBK_LOC_WRK_LOC_CD</th>
+                  <th>SUBK_LOC_IBM_LOC</th>
+                  <th>SUBK_LOC_BUSINESS_UNIT</th>
+                  <th>GD_TYPE_CD</th>
+                  <th>OPEN_SEAT_TITLE</th>
+                  <th>PHONE</th>
+                  <th>CONTACT_EMAIL</th>
+                  <th>HAS_GLOBAL_DELIVERY_CENTER</th>
+                  <th>RENEWAL_FLAG</th>
+                  <th>TRANSFER_WITHIN_SAME_LOB</th>
+                  <th>CHANGE_CREATION_TRIGGER</th>
+                  <th>SERVICE_REQUEST_NUM</th>
+                  <th>PREV_REQUESTING_NUM</th>
+                  <th>PREV_HIRING_APPR_TICKET_NUM</th>
+                  <th>PREV_SERVICE_REQUEST_NUM</th>
+                  <th>PREV_PURCHASE_ORDER_NUM</th>
+                  <th>PREV_PURCHASE_REQUISITION_NUM</th>
+                  <th>EXPECTED_START_DT</th>
+                  <th>EXPECTED_END_DT</th>
+                  <th>LOA_START_DT</th>
+                  <th>LOA_ISSUE_DT</th>
+                  <th>ACTUAL_START_DT</th>
+                  <th>PO_KEY</th>
+                  <th>IBM_RESOURCE_ID</th>
+                  <th>AUTOMATION</th>
+                  <th>CANCEL_REASON_ID</th>
+                  <th>CREATE_TS</th>
+                  <th>UPDATE_TS</th>
+                  <th>COMPLETED_TS</th>
+                  <th>ROUTE_TS</th>
+                  <th>RENEWAL_START_TS</th>
+                  <th>RENEWAL_END_TS</th>
+                  <th>RENEWAL_ABORT_TS</th>
+                  <th>RESUBMITTEDBY_TS</th>
+                  <th>CANCEL_TS</th>
+                  <th>SUBCONTRACTOR_FIRST_NAME</th>
+                  <th>SUBCONTRACTOR_MIDDLE_NAME</th>
+                  <th>SUBCONTRACTOR_LAST_NAME</th>
+                  <th>LOA_FILE_LOCATION</th>
+                  <th>COMMENT</th>
+                  <th>SUBK_LOC_ADDR1</th>
+                  <th>SUBK_LOC_ADDR2</th>
+                  <th>ROUTE_UID</th>
+                  <th>GLOBAL_DELIVERY_CENTER</th>
+                  <th>RETURNED_COMMENT</th>
+                  <th>EMAIL_ADDRESSES</th>
+                  <th>RESUBMITTEDBY_UID</th>
+                  <th>CANCEL_UID</th>
+                  <th>PROCESSING_CENTER</th>
+                  <!-- end -->
+
                 </tr>
               </thead>
               <tbody>
@@ -85,6 +182,103 @@
                   <td>{{j.SUBCONTRACTOR_FIRST_NAME}} {{j.SUBCONTRACTOR_MIDDLE_NAME}} {{j.SUBCONTRACTOR_LAST_NAME}}</td>
                   <td>{{j.PURCHASE_ORDER_NUM}}</td>
                   <td>{{j.CREATE_TS}}</td>
+
+                  <!-- start -->
+                  <td>{{j.IRPA}}</td>
+                <td>{{j.PREV_IRPA_ID}}</td>
+                <td>{{j.RAR_ID}}</td>
+                <td>{{j.PREV_RAR_ID}}</td>
+                <td>{{j.PREV_CHECKLIST_RECORD_ID}}</td>
+                <td>{{j.RECORD_STATUS}}</td>
+                <td>{{j.SUPPLIER_CONTACT_NAME}}</td>
+                <td>{{j.SUPPLIER_CONTACT_EMAIL_ADDR}}</td>
+                <td>{{j.RESOURCE_REQUEST_SYSTEM}}</td>
+                <td>{{j.RESOURCE_REQUEST_NUM}}</td>
+                <td>{{j.REQUESTING_SYSTEM}}</td>
+                <td>{{j.REQUESTING_NUM}}</td>
+                <td>{{j.HIRING_APPR_KNOWN}}</td>
+                <td>{{j.HIRING_APPR_SYSTEM}}</td>
+                <td>{{j.HIRING_APPR_TICKET_NUM}}</td>
+                <td>{{j.PURCHASE_REQUISITION_KNOWN}}</td>
+                <td>{{j.PURCHASE_REQUISITION_SYSTEM}}</td>
+                <td>{{j.PURCHASE_REQUISITION_NUM}}</td>
+                <td>{{j.LOA_EXIST}}</td>
+                <td>{{j.LOA_BUYER_CONTACT}}</td>
+                <td>{{j.PURCHASE_ORDER_NUM}}</td>
+                <td>{{j.PURCHASE_ORDER_ITEM_NUM}}</td>
+                <td>{{j.CREATE_UID}}</td>
+                <td>{{j.UPDATE_UID}}</td>
+                <td>{{j.RECORD_TYPE}}</td>
+                <td>{{j.SUPPLIER_NAME}}</td>
+                <td>{{j.DEPT_CD}}</td>
+                <td>{{j.REGION_GROUP_CD}}</td>
+                <td>{{j.CSA_CANDIDATE_KEY}}</td>
+                <td>{{j.OFB_EARLY_TERM}}</td>
+                <td>{{j.OFB_CONFIRM_CONTRACT_TERM_DT}}</td>
+                <td>{{j.OFB_REASON}}</td>
+                <td>{{j.REENGAGE_ELIGIBLE}}</td>
+                <td>{{j.RAR_ID_C}}</td>
+                <td>{{j.PREV_RAR_ID_C}}</td>
+                <td>{{j.GENERATED_FROM_CHANGE_RECORD}}</td>
+                <td>{{j.WAS_OFFBOARDED}}</td>
+                <td>{{j.DIVISION_CD}}</td>
+                <td>{{j.SUBK_LOC_CITY}}</td>
+                <td>{{j.SUBK_LOC_ST}}</td>
+                <td>{{j.SUBK_LOC_ST_FREEFORM}}</td>
+                <td>{{j.SUBK_LOC_ZIP}}</td>
+                <td>{{j.SUBK_LOC_COUNTRY}}</td>
+                <td>{{j.SUBK_LOC_WORKPLACE_IND}}</td>
+                <td>{{j.SUBK_LOC_WRK_LOC_CD}}</td>
+                <td>{{j.SUBK_LOC_IBM_LOC}}</td>
+                <td>{{j.SUBK_LOC_BUSINESS_UNIT}}</td>
+                <td>{{j.GD_TYPE_CD}}</td>
+                <td>{{j.OPEN_SEAT_TITLE}}</td>
+                <td>{{j.PHONE}}</td>
+                <td>{{j.CONTACT_EMAIL}}</td>
+                <td>{{j.HAS_GLOBAL_DELIVERY_CENTER}}</td>
+                <td>{{j.RENEWAL_FLAG}}</td>
+                <td>{{j.TRANSFER_WITHIN_SAME_LOB}}</td>
+                <td>{{j.CHANGE_CREATION_TRIGGER}}</td>
+                <td>{{j.SERVICE_REQUEST_NUM}}</td>
+                <td>{{j.PREV_REQUESTING_NUM}}</td>
+                <td>{{j.PREV_HIRING_APPR_TICKET_NUM}}</td>
+                <td>{{j.PREV_SERVICE_REQUEST_NUM}}</td>
+                <td>{{j.PREV_PURCHASE_ORDER_NUM}}</td>
+                <td>{{j.PREV_PURCHASE_REQUISITION_NUM}}</td>
+                <td>{{j.EXPECTED_START_DT}}</td>
+                <td>{{j.EXPECTED_END_DT}}</td>
+                <td>{{j.LOA_START_DT}}</td>
+                <td>{{j.LOA_ISSUE_DT}}</td>
+                <td>{{j.ACTUAL_START_DT}}</td>
+                <td>{{j.PO_KEY}}</td>
+                <td>{{j.IBM_RESOURCE_ID}}</td>
+                <td>{{j.AUTOMATION}}</td>
+                <td>{{j.CANCEL_REASON_ID}}</td>
+                <td>{{j.CREATE_TS}}</td>
+                <td>{{j.UPDATE_TS}}</td>
+                <td>{{j.COMPLETED_TS}}</td>
+                <td>{{j.ROUTE_TS}}</td>
+                <td>{{j.RENEWAL_START_TS}}</td>
+                <td>{{j.RENEWAL_END_TS}}</td>
+                <td>{{j.RENEWAL_ABORT_TS}}</td>
+                <td>{{j.RESUBMITTEDBY_TS}}</td>
+                <td>{{j.CANCEL_TS}}</td>
+                <td>{{j.SUBCONTRACTOR_FIRST_NAME}}</td>
+                <td>{{j.SUBCONTRACTOR_MIDDLE_NAME}}</td>
+                <td>{{j.SUBCONTRACTOR_LAST_NAME}}</td>
+                <td>{{j.LOA_FILE_LOCATION}}</td>
+                <td>{{j.COMMENT}}</td>
+                <td>{{j.SUBK_LOC_ADDR1}}</td>
+                <td>{{j.SUBK_LOC_ADDR2}}</td>
+                <td>{{j.ROUTE_UID}}</td>
+                <td>{{j.GLOBAL_DELIVERY_CENTER}}</td>
+                <td>{{j.RETURNED_COMMENT}}</td>
+                <td>{{j.EMAIL_ADDRESSES}}</td>
+                <td>{{j.RESUBMITTEDBY_UID}}</td>
+                <td>{{j.CANCEL_UID}}</td>
+                <td>{{j.PROCESSING_CENTER}}</td>
+
+                  <!-- end -->
                 </tr>
               </tbody>
             </table>
