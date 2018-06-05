@@ -1,6 +1,12 @@
+html, body
+{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 table{
 	white-space: nowrap;
-	height: 1000px;
+	height: 100vh;
 	width: 100%;
 }
 tr{
@@ -17,7 +23,8 @@ td{
 	max-width:200px;
 }
 .table-responsive {
-	height: 1200px;
+	height: 100vh;
+	overflow-x: unset;
 }
 .filter-select {
 	width: 200px;
