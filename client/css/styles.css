@@ -19,3 +19,10 @@ td{
 .table-responsive {
 	height: 1200px;
 }
+.filter-select {
+	width: 200px;
+}
+/* Hidden placeholder */
+.filter-select option[disabled]:first-child {
+	display: none;
+}

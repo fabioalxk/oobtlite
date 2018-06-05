@@ -1,13 +1,11 @@
 var recordStatus = new Array();
 recordStatus["ONBDD"] = "Onboarded";
 
-$(function(){
-    $(".wrapper1").scroll(function(){
-        $(".wrapper2")
-            .scrollLeft($(".wrapper1").scrollLeft());
-    });
-    $(".wrapper2").scroll(function(){
-        $(".wrapper1")
-            .scrollLeft($(".wrapper2").scrollLeft());
-    });
-});
+// $(document).ready(function(){
+//     $('#go').keypress(function(e){
+//       if(e.keyCode==13) {
+//       	//console.log("hey");
+//       	angular.element('#myItemsController').scope().go();
+//       }
+//     });
+// });
