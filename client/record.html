@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Records</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
@@ -15,6 +15,7 @@
     <script src="./js/lb-services.js"></script>
     <link rel="stylesheet" type="text/css" href="./lib/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="SHORTCUT ICON" href="//w3.ibm.com/favicon.ico">
 <!--     <link rel="stylesheet" type="text/css" href="./css/dashboard.css"> -->
   </head>
   <body ng-app="myItems">
@@ -75,7 +76,7 @@
               </thead>
               <tbody>
                 <tr ng-repeat="j in CHECKLIST_RECORDs">
-                  <td><a href="http://oobttest-r1a4.lexington.ibm.com:9081/services/tools/oobt/onboardRecord.do?recordId={{j.CHECKLIST_RECORD_ID}}">{{j.CHECKLIST_RECORD_ID}}</a></td>
+                  <td><a href="https://b03zvi9000270.ahe.boulder.ibm.com:9443/services/tools/oobt/onboardRecord.do?recordId={{j.CHECKLIST_RECORD_ID}}">{{j.CHECKLIST_RECORD_ID}}</a></td>
                   <td>{{j.CHECKLIST_REQUEST_ID}}</td>
                   <td>
                       <div>

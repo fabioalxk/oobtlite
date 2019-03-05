@@ -3,13 +3,13 @@
     "name": "db",
     "connector": "memory"
   },
-  "oobttest": {
-    "host": "oobttest-r1d4.lexington.ibm.com",
-    "port": "50001",
+  "fabioale": {
+    "host": "b03zvi9000270.ahe.boulder.ibm.com",
+    "port": "60000",
     "database": "OOBTR200",
-    "password": "oobt5adm",
-    "name": "oobttest",
-    "user": "oobttest",
+    "password": "Faleosm!45",
+    "name": "fabioale",
+    "user": "fabioale",
     "schema": "OOBT",
     "connector": "db2"
   }
